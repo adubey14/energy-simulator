@@ -9,7 +9,7 @@ docker build -t gridlab .
 ```
 $ mkdir test
 $ cd test
-$ git clone <gridlab-d tutorials>
+# you can put any files in test and they will become available in the test folder in docker.
 $ docker run -t -i -v test:/test gridlab bash
 ```
 The above command will make the test folder and its contents available as a volume in the linux machine within docker. It also opens a bash shell.
